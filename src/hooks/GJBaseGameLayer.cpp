@@ -6,8 +6,8 @@
 using namespace geode::prelude;
 
 class $modify(GJBaseGameLayer) {
-    void processCommands(float pd) {
-        GatoBot::get()->updateBot();
-        GJBaseGameLayer::processCommands(pd);
+    void processCommands(float dt, bool isHalfTick, bool isLastTick) {
+        if(!isHalfTick) GatoBot::get()->updateBot();
+        GJBaseGameLayer::processCommands(dt, isHalfTick, isLastTick);
     }
 };
