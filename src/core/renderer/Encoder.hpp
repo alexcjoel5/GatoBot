@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Geode/utils/Result.hpp>
+#include <Geode/Geode.hpp>
 #include <Geode/cocos/platform/win32/CCGL.h>
 #include <Geode/cocos/cocoa/CCGeometry.h>
 #include <core/Types.hpp>
